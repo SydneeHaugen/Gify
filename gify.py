@@ -30,7 +30,7 @@ async def on_ready():
 @bot.event
 async def on_message(message):
 
-    #jarvis says a random quotes if you speak its name (lowercase only)
+    #Gify says a random quotes if you speak its name (lowercase only)
     if 'gify' in message.content.lower():
 
         await message.channel.send("Hi :)")
