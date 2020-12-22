@@ -52,7 +52,7 @@ async def hello(context):
 async def noice(context):
 
     noiceGIF = 'https://tenor.com/view/brooklyn99-noice-jake-peralta-andy-samberg-nice-gif-14234819'
-    await message.channel.send(noiceGIF)
+    await context.channel.send(noiceGIF)
 
 
 
