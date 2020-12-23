@@ -51,12 +51,12 @@ async def noice(context):
     noiceGIF = 'https://tenor.com/view/brooklyn99-noice-jake-peralta-andy-samberg-nice-gif-14234819'
     await context.channel.send(noiceGIF)
 
-
+# simple example that prints out hello
 @bot.command(name='boop', help='Jarvis says hello.')
-async def noice(context):
+async def boop(context):
 
-    noiceGIF = 'https://tenor.com/view/boop-alexis-rose-gif-18002318'
-    await context.channel.send(noiceGIF)
+    boopGIF = 'https://tenor.com/view/boop-alexis-rose-gif-18002318'
+    await context.channel.send(boopGIF)
 
 #runs bot
 bot.run(token)
