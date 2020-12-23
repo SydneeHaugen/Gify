@@ -1,11 +1,8 @@
 import discord
 
-
 import asyncio
 import requests
 import os
-
-
 
 from discord.ext import commands
 from dotenv import load_dotenv
@@ -55,7 +52,11 @@ async def noice(context):
     await context.channel.send(noiceGIF)
 
 
+@bot.command(name='boop', help='Jarvis says hello.')
+async def noice(context):
 
+    noiceGIF = 'https://tenor.com/view/boop-alexis-rose-gif-18002318'
+    await context.channel.send(noiceGIF)
 
 #runs bot
 bot.run(token)
