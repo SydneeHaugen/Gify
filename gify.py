@@ -20,21 +20,11 @@ async def on_ready():
     print(bot.user.id)
     print('------')
 
-@bot.event
-async def on_message(message):
-
-    #Gify says a random quotes if you speak its name (lowercase only)
-    if 'gify' in message.content.lower():
-
-        await message.channel.send("Hi :)")
-
-
-    await bot.process_commands(message)
-
 
 # Post Noice gif.
 @bot.command(name='noice', help='Brooklyn 99 Noice.')
 async def noice(context):
+    
 
     noiceGIF = 'https://tenor.com/view/brooklyn99-noice-jake-peralta-andy-samberg-nice-gif-14234819'
     await context.channel.send(noiceGIF)
@@ -52,6 +42,20 @@ async def fu(context):
 
     fuGIF = 'https://tenor.com/view/fuck-you-gif-4335985'
     await context.channel.send(fuGIF)
+
+# Post wink gif.
+@bot.command(name='wink', help='Schitts Creek (Alexis Wink).')
+async def wink(context):
+
+    winkGIF = 'https://tenor.com/view/schitts-creek-alexis-wink-flirting-gif-11803901'
+    await context.channel.send(winkGIF)
+
+# Post don't be a little B! gif.
+@bot.command(name='b', help='Schitts Creek (Davild dont be a little B!).')
+async def b(context):
+
+    bGIF = 'https://tenor.com/view/dontbeab-bitch-dont-schitt-gif-5532877'
+    await context.channel.send(bGIF)
 
 
 #runs bot
