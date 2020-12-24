@@ -1,5 +1,4 @@
 import discord
-
 import asyncio
 import os
 
@@ -12,8 +11,6 @@ load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
 
 bot = commands.Bot(command_prefix='#')
-
-
 
 # bot info runs on start
 @bot.event
@@ -35,27 +32,27 @@ async def on_message(message):
     await bot.process_commands(message)
 
 
-# simple example that prints out hello
-@bot.command(name='hello', help='Jarvis says hello.')
-async def hello(context):
-
-    msg = 'Hello ' + context.author.mention
-
-    await context.send(msg)
-
-# simple example that prints out hello
-@bot.command(name='noice', help='Jarvis says hello.')
+# Post Noice gif.
+@bot.command(name='noice', help='Brooklyn 99 Noice.')
 async def noice(context):
 
     noiceGIF = 'https://tenor.com/view/brooklyn99-noice-jake-peralta-andy-samberg-nice-gif-14234819'
     await context.channel.send(noiceGIF)
 
-# simple example that prints out hello
-@bot.command(name='boop', help='Jarvis says hello.')
+# Post boop gif.
+@bot.command(name='boop', help='Schitts Creek (Alexis boop).')
 async def boop(context):
 
     boopGIF = 'https://tenor.com/view/boop-alexis-rose-gif-18002318'
     await context.channel.send(boopGIF)
+
+# Post F@uk u gif.
+@bot.command(name='fu', help='F@uk u.')
+async def fu(context):
+
+    fuGIF = 'https://tenor.com/view/fuck-you-gif-4335985'
+    await context.channel.send(fuGIF)
+
 
 #runs bot
 bot.run(token)
