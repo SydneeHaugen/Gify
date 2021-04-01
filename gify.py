@@ -58,5 +58,26 @@ async def b(context):
     await context.channel.send(bGIF)
 
 
+# Post Indeed gif.
+@bot.command(name='indeed', help='Birdgerton (simom indeed).')
+async def indeed(context):
+
+    bGIF = 'https://tenor.com/view/bridgerton-rege-jean-page-simon-basset-duke-of-hastings-period-drama-gif-19734062'
+    await context.channel.send(bGIF)
+
+# Post Is that so? gif.
+@bot.command(name='its', help='Birdgerton (simom Is that so?).')
+async def its(context):
+
+    bGIF = 'https://tenor.com/view/bridgerton-rege-jean-page-simon-basset-duke-of-hastings-period-drama-gif-19733860'
+    await context.channel.send(bGIF)
+
+# Post unlikely gif.
+@bot.command(name='unlikely', help='Schitts Creek (Davild unlikely).')
+async def unlikely(context):
+
+    bGIF = 'https://tenor.com/view/schitts-creek-david-rose-unlikely-probably-not-yeah-no-gif-19728909'
+    await context.channel.send(bGIF)
+
 #runs bot
 bot.run(token)
