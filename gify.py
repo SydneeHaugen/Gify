@@ -79,5 +79,28 @@ async def unlikely(context):
     bGIF = 'https://tenor.com/view/schitts-creek-david-rose-unlikely-probably-not-yeah-no-gif-19728909'
     await context.channel.send(bGIF)
 
+
+# Post You got a Problem? gif.
+@bot.command(name='u', help='SNL (simom You got a Problem?).')
+async def u(context):
+
+    bGIF = 'https://tenor.com/view/you-got-a-problem-rege-jean-page-saturday-night-live-excuse-me-whats-wrong-gif-20503002'
+    await context.channel.send(bGIF)
+
+
+# Post youTude video of drivers license.
+@bot.command(name='dl', help='youTude video of drivers license.')
+async def dl(context):
+
+    bGIF = 'https://www.youtube.com/watch?v=ZmDBbnmKpqQ'
+    await context.channel.send(bGIF)
+
+# Post youTude video of drivers license SNL.
+@bot.command(name='dls', help='youTude video of drivers license on SNL.')
+async def dls(context):
+
+    bGIF = 'https://www.youtube.com/watch?v=OPjvCFa8LuE'
+    await context.channel.send(bGIF)
+
 #runs bot
 bot.run(token)
