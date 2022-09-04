@@ -1,5 +1,5 @@
 # Gify
 
-Gify is a discord bot writt in pthon with the discord.py library
+Gify is a discord bot written in pthon with the discord.py library
 
-Gify post GIF want prompted my a users.
+Gify post GIF when prompted my a users.
