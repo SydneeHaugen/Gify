@@ -5,7 +5,7 @@ import os
 from discord.ext import commands
 from dotenv import load_dotenv
 
-#this is access able on the .env (on computer running jarvis program)
+#this is access able on the .env (on computer running gify program)
 load_dotenv()
 
 token = os.getenv('DISCORD_TOKEN')
@@ -21,11 +21,10 @@ async def on_ready():
     print('------')
 
 
+
 # Post Noice gif.
 @bot.command(name='noice', help='Brooklyn 99 Noice.')
 async def noice(context):
-    
-
     noiceGIF = 'https://tenor.com/view/brooklyn99-noice-jake-peralta-andy-samberg-nice-gif-14234819'
     await context.channel.send(noiceGIF)
 
@@ -62,45 +61,30 @@ async def b(context):
 @bot.command(name='indeed', help='Birdgerton (simom indeed).')
 async def indeed(context):
 
-    bGIF = 'https://tenor.com/view/bridgerton-rege-jean-page-simon-basset-duke-of-hastings-period-drama-gif-19734062'
-    await context.channel.send(bGIF)
+    indeedGIF = 'https://tenor.com/view/bridgerton-rege-jean-page-simon-basset-duke-of-hastings-period-drama-gif-19734062'
+    await context.channel.send(indeedGIF)
 
 # Post Is that so? gif.
-@bot.command(name='its', help='Birdgerton (simom Is that so?).')
+@bot.command(name='ITS', help='Birdgerton (simom Is that so?).')
 async def its(context):
 
-    bGIF = 'https://tenor.com/view/bridgerton-rege-jean-page-simon-basset-duke-of-hastings-period-drama-gif-19733860'
-    await context.channel.send(bGIF)
+    itsGIF = 'https://tenor.com/view/bridgerton-rege-jean-page-simon-basset-duke-of-hastings-period-drama-gif-19733860'
+    await context.channel.send(itsGIF)
 
 # Post unlikely gif.
 @bot.command(name='unlikely', help='Schitts Creek (Davild unlikely).')
 async def unlikely(context):
 
-    bGIF = 'https://tenor.com/view/schitts-creek-david-rose-unlikely-probably-not-yeah-no-gif-19728909'
-    await context.channel.send(bGIF)
+    unlikelyGIF = 'https://tenor.com/view/schitts-creek-david-rose-unlikely-probably-not-yeah-no-gif-19728909'
+    await context.channel.send(unlikelyGIF)
 
 
 # Post You got a Problem? gif.
 @bot.command(name='u', help='SNL (simom You got a Problem?).')
 async def u(context):
 
-    bGIF = 'https://tenor.com/view/you-got-a-problem-rege-jean-page-saturday-night-live-excuse-me-whats-wrong-gif-20503002'
-    await context.channel.send(bGIF)
-
-
-# Post youTude video of drivers license.
-@bot.command(name='dl', help='youTude video of drivers license.')
-async def dl(context):
-
-    bGIF = 'https://www.youtube.com/watch?v=ZmDBbnmKpqQ'
-    await context.channel.send(bGIF)
-
-# Post youTude video of drivers license SNL.
-@bot.command(name='dls', help='youTude video of drivers license on SNL.')
-async def dls(context):
-
-    bGIF = 'https://www.youtube.com/watch?v=OPjvCFa8LuE'
-    await context.channel.send(bGIF)
+    uGIF = 'https://tenor.com/view/you-got-a-problem-rege-jean-page-saturday-night-live-excuse-me-whats-wrong-gif-20503002'
+    await context.channel.send(uGIF)
 
 #runs bot
 bot.run(token)
