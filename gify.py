@@ -86,5 +86,48 @@ async def u(context):
     uGIF = 'https://tenor.com/view/you-got-a-problem-rege-jean-page-saturday-night-live-excuse-me-whats-wrong-gif-20503002'
     await context.channel.send(uGIF)
 
+# Post Minions wow.
+@bot.command(name='wow', help='Minions (saying wow).')
+async def u(context):
+
+    uGIF = 'https://tenor.com/view/minions-despicableme-wow-gif-19917491'
+    await context.channel.send(uGIF)
+
+# Post dancing cat with glow stick.
+@bot.command(name='dcat', help='dancing cat (with glow stick).')
+async def u(context):
+
+    uGIF = 'https://tenor.com/view/dancing-cat-glow-stick-cat-gif-15683985'
+    await context.channel.send(uGIF)
+
+# Post Hamilton.
+@bot.command(name='hf', help='Hamiton (saying fuuuuu).')
+async def u(context):
+
+    uGIF = 'https://tenor.com/view/hamilton-letter-hamilton-letter-gif-18285258'
+    await context.channel.send(uGIF)
+
+# Post Hamilton.
+@bot.command(name='heh', help='Hamiton (saying heh lets go).')
+async def u(context):
+
+    uGIF = 'https://tenor.com/view/lets-go-hamilton-lets-go-heh-lets-go-hehehe-funny-hamilton-gif-18285155'
+    await context.channel.send(uGIF)
+
+# Post King georgo.
+@bot.command(name='kingwow', help='king-george (awesome-wow).')
+async def u(context):
+
+    uGIF = 'https://tenor.com/view/hamilton-king-george-awesome-wow-funny-gif-17726169'
+    await context.channel.send(uGIF)
+
+# Post hamilton-musical.
+@bot.command(name='what', help='hamilton-musical (whatttt).')
+async def u(context):
+
+    uGIF = 'https://tenor.com/view/shocked-surprised-what-hamilton-musical-gif-17819242'
+    await context.channel.send(uGIF)
+
+
 #runs bot
 bot.run(token)
